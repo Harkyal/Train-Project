@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add New User</title>
+    
+  <link rel="stylesheet" href="/main.css" />
+  <style>
+
+  </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a  href="/user"class="active">User Registeration</a>
+      <a  href="/add">Register</a>
+      <a href="/del">Delete train</a>
+      <a href="/upd">Update Train</a>
+      <a href="/show">Train Details</a>
+    </div>
+    <center>
+      <h1><b>Add New User</h1></b>
+    
+    
+    </center>
+	 <section data-position="add-user">
+     <h2 style="color:white " >Add New User Information</h2>
+
+      <form action="/users" method="POST">
+    
+        <label>First Name</label><br><input class="form-control" type="text" placeholder="First Name" name=first_name id="first_name" required><br>
+        <label>Last Name</label><br><input type="text" placeholder="Last Name" name="last_name" id="last_name" required/><br>
+        <label>UserName</label><br><input type="text" placeholder="UserName" name="user_name" id="user_name" required/><br>
+
+        <label>Gender</label><br><select id="gender" name="gender" >
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select><br>
+        <label>Contact Number</label><br><input type="text" placeholder="Contact" name="contact" id="contact" required/><br>
+        <label>Date of Birth</label><br><input type="date" placeholder="YYYY-MM-DD" name="date" id="date" required/><br><br>
+        <label>Password</label><br><input type="password" placeholder="password" name="password" id="password" required/><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  <br/><br/>
+  
+	
+ 
+
+</body>
+</html>

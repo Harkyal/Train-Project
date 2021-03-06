@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Update section</title>
+	<link rel="stylesheet" href="/main.css" />
+	<style>
+		button {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 25px;
+margin: 4px 2px;
+cursor: pointer;
+padding: 10px 24px;
+border-radius: 8px;
+
+}
+	</style>
+  </head>
+
+  <body>
+	<div class="topnav">
+		<a  href="/user">User Registeration</a>
+		<a  href="/add">Register</a>
+		<a href="/del">Delete train</a>
+		<a href="/upd"class="active">Update Train</a>
+		<a href="/show">Train Details</a>
+	  </div>
+	
+	<section data-position="delete-train" style="display: none;">
+             <button id="delete-button">Delete</button>
+          </section>
+	
+	<section data-position="update-train">
+      <div>
+        
+		<label>Train Number</label><br><input type="text" placeholder="id" name="train_number" id="trainNumber"required /><br>
+		<label>Train Duration</label><br><input type="text" placeholder="train Duration" name="train_duration" id="train_duration"required /><br>
+		<label>Source Location</label><br><input type="text" placeholder="source Location" name="source_location" id="source_location" required /><br>
+		<label>Destination Location</label><br><input type="text" placeholder="destination Location" name="destination_location" id="destination_location" required /><br>
+		<label>Date</label><br><input type="date" placeholder="date" name="date_r" id="date_r" required /><br>
+		<button id="update-button">Update</button>
+      </div>
+      <div id="message"></div>
+    </section>
+	
+	
+	<script src="/main.js"></script>
+  </body>
+</html>
+

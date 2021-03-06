@@ -1,0 +1,42 @@
+<html>
+	<head><title>The delete section</title>
+		<link rel="stylesheet" href="/main.css" />
+		<style>
+			button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 8px;
+  
+}
+		</style>
+	</head>
+	<body >
+		<div class="topnav">
+			<a  href="/user">User Registeration</a>
+			<a  href="/add">Register</a>
+			<a href="/del"class="active">Delete train</a>
+			<a href="/upd">Update Train</a>
+			<a href="/show">Train Details</a>
+		  </div>
+		<section data-position="delete-train">
+			<div>
+			  <h2>Remove Train!</h2>
+			  <p>
+				
+			  </p><label>Enter the Train Number :</label>
+			  <input type="text" placeholder="Train Number" name="train_number" id="trainNumber" required />
+			  <button id="delete-button">Delete</button>
+			</div>
+			<div id="message"></div>
+		  </section>
+		  <script src="/main.js"></script>
+	</body>
+</html>

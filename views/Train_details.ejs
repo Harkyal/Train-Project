@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Train Details</title>
+  <link rel="stylesheet" href="/main.css" />
+  <style>
+ 
+  </style>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a  href="/user">User Registeration</a>
+      <a  href="/add">Register</a>
+      <a href="/del">Delete train</a>
+      <a href="/upd">Update Train</a>
+      <a href="/show"class="active">Train Details</a>
+    </div>
+    <center>
+    <h1 data-position="header"style=" position:center; color:white; top:10%; ">All Train Details</h1>
+
+    <section data-position="books">
+      <h2>Train Details</h2>
+      <div style="">
+<table border="4px solid black"  style="position: center;background-color: white; margin: 5px; padding: 5px; border-radius: 8px;">
+  <tr>
+    <th> Train Number</th>
+    <th>Travel Duration</th>
+    <th>Source Location</th>
+    <th>Destination Location</th>  
+    <th>Departure Date</th>
+    <th>Update</th>
+    <th>Delete</th>
+
+  </tr>
+  
+      <% for(var i = 0; i < alltrains.length; i++) {%>
+        <tr>
+       <td id="train_number"name="train_number" > <span><%= alltrains[i].train_number %></span> </td>
+       
+       <td> <span><%= alltrains[i].train_duration %></span></td>
+       <td><span><%= alltrains[i].source_location %></span> </td>
+       <td><span><%= alltrains[i].destination_location %></span></td>
+       <td><span><%= alltrains[i].date %></span> </td>
+       <td><button ><a href="/upd" style="text-decoration: white; color: white;">Update</a></button></td>
+       <td><button ><a href="/del" style="text-decoration: white; color: white;">Delete</a></button></td>
+       <% } %>
+  </tr>
+</table>
+</div>
+</center>
+    
+    </section>
+
+  <script src="/main.js"></script>
+  
+  </body>
+</html>
